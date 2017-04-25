@@ -48,6 +48,5 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: online-app_production
-  username: online-app
-  password: <%= ENV['ONLINE-APP_DATABASE_PASSWORD'] %>
